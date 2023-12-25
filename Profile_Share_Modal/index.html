@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- wrapper starts -->
+    <div class="wrapper">
+      <!-- wrapper starts -->
+      <div class="circle-top circle"></div>
+      <div class="circle-bottom circle"></div>
+
+      <!-- cards starts -->
+
+      <div class="card">
+        <img src="Images/profile-photo.jpg" alt="user image" />
+        <h2 class="user-name">Bikash&nbsp; Santra</h2>
+        <h3 class="user-designation">Website Developer</h3>
+
+        <div class="buttons-group">
+          <button id="share-btn">
+            <i class="fa-solid fa-share"></i>
+            Share My Profile
+          </button>
+          <button id="follow-btn">Follow Me</button>
+        </div>
+      </div>
+
+      <!-- cards ends -->
+    </div>
+    <!--/// wraper ends ///-->
+
+    <!-- profile modal starts -->
+    <div class="modal" id="profile-modal">
+      <!-- modal header -->
+      <div class="modal-header">
+        <h2 class="modal-title">Share My Profile</h2>
+        <i class="fa-solid fa-xmark modal-close" id="profile-modal-close"></i>
+      </div>
+
+      <!-- modal body -->
+      <div class="modal-body">
+        <h3>Share this via</h3>
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/bikash-santra-886901217"
+            id="linkedin-icon"
+            class="icon"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a
+            href="https://x.com/Bikash_Santra03"
+            id="x-icon"
+            class="icon"
+            target="_blank"
+          >
+            <i class="fa-brands fa-x-twitter"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/bikash_santra03/"
+            id="instagram-icon"
+            class="icon"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a
+            href="https://t.me/Bikash_Santra"
+            id="telegram-icon"
+            class="icon"
+            target="_blank"
+          >
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--/// profile modal ends ///-->
+
+    <!-- follow modal starts -->
+    <div class="modal" id="follow-modal">
+      <!-- modal-header -->
+      <div class="modal-header">
+        <h2 class="modal-title">Github Profile</h2>
+        <i class="fa-solid fa-xmark modal-close" id="follow-modal-close"></i>
+      </div>
+
+      <!-- modal body -->
+      <div class="modal-body">
+        <h3>Check My Repositories</h3>
+
+        <div class="social-icons">
+          <a
+            href="https://github.com/BikashSantra03"
+            id="github-icon"
+            class="icon"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <button id="follow-unfollow">
+            <a href="https://github.com/BikashSantra03"> Follow </a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--/// follow modal ends/// -->
+
+    <!-- overlay -->
+    <div class="overlay" id="overlay"></div>
+  </body>
+  <script src="scripts.js"></script>
+</html>
